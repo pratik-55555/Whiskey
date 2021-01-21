@@ -1,6 +1,6 @@
 using System;
 
-namespace Whiskey.Models
+namespace Whiskey.Models.ViewModels
 {
     public class ErrorViewModel
     {
