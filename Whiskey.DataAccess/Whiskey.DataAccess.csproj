@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Whiskey.Utility\Whiskey.Utility.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\Migrations\" />
-  </ItemGroup>
-
 </Project>

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Whiskey.Models;
 
 namespace Whiskey.DataAccess.Data
 {
@@ -12,5 +13,8 @@ namespace Whiskey.DataAccess.Data
             : base(options)
         {
         }
+
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
