@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Whiskey.DataAccess.Data;
+using Whiskey.DataAccess.Repository;
+using Whiskey.DataAccess.Repository.IRepository;
 
 namespace Whiskey
 {
@@ -28,6 +30,7 @@ namespace Whiskey
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
